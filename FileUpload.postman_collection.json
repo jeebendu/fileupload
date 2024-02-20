@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "9867aa41-c18f-4e61-9deb-08c0b13855d4",
+		"name": "FileUpload",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16996702"
+	},
+	"item": [
+		{
+			"name": "upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/jeebe/OneDrive/Pictures/Screenshots/Screenshot 2024-02-12 134528.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/file/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"file",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Process",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/jeebe/OneDrive/Pictures/Screenshots/Screenshot 2024-01-29 122625.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/file/process",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"file",
+						"process"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "download",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/file/download",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"file",
+						"download"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
